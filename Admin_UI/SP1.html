@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <!-- Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">MinHi Cosmetic</a>
+                </div>
+                <ul class="sidebar-nav"> 
+                    <li class="sidebar-item">
+                        <a href="./QLNV.html" class="sidebar-link collapsed" >
+                            <i class="fa-solid fa-person"></i>
+                            Quản lý nhân viên
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="./QLKH.html" class="sidebar-link collapsed">
+                            <i class="fa-solid fa-person"></i>
+                            Quản lý khách hàng
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="./QLDH.html" class="sidebar-link collapsed">
+                            <i class="fa-solid fa-pager"></i>
+                            Quản lý đơn hàng
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="SP1.html" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-solid fa-pager"></i>
+                            Quản lý sản phẩm                          
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapsed" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="SP1.html" class="sidebar-link">Sữa rửa mặt</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Kem chống nắng</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Serum</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Kem dưỡng ẩm</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                    <a href="./SP1.html">Quản lý sản phẩm</a>
+                    <span>/</span>
+                    <a href="SP1.html">Sữa rửa mặt</a>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="">
+                            <div class="notification">
+                                <i class="fa-solid fa-bell"></i>
+                                <span class="badge">2</span>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="./assets/img/avatar.png" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item">Setting</a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <a href="ThemSP.html" class="add_emp">Thêm sản phẩm</a>
+                    <div class="card border-0">
+                        <div class="card-header card-select">
+                            <select name="" id="" class="mode">
+                                <option value="xem">Xem</option>
+                                <option value="chinhsua">Chỉnh sửa</option>
+                            </select>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tên</th>
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Nhà CC</th>
+                                    <th scope="col">Vấn đề về da</th>
+                                    <th scope="col" class="desc_product">Mô tả</th>
+                                    <th scope="col">Loại da</th>
+                                    <th scope="col">Đối tượng</th>
+                                    <th scope="col">SL</th>
+                                    <th scope="col">Giá</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Cetaphil</td>
+                                    <td><img src="./assets/img/srm_1.jpg" alt=""  ></td>
+                                    <td>VFU Shop</td>
+                                    <td>Da nhạy cảm, kích ứng, mẫn đỏ</td>
+                                    <td>Có khả năng làm sạch sâu, loại bỏ hoàn toàn bụi bẩn, và tạp chất trên da một cách dịu nhẹ nhưng vẫn duy trì độ ẩm tự nhiên để bảo vệ da khỏi tình trạng khô ráp, sữa rửa mặt Cetaphil mới với công thức lành tính không gây kích ứng sẽ an toàn cho mọi loại da, kể cả da nhạy cảm.</td>
+                                    <td>Mọi loại da</td>
+                                    <td>Nam,Nữ</td>
+                                    <td><input type="number" readonly value="15" style="border: none; width: 50px;" class="quantity"></td>
+                                    <td><input type="number" readonly value="20000" style="border: none; width: 100px;" class="price"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+            </main>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

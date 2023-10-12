@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 0.875rem;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    opacity: 1;
+    overflow-y: scroll;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.275rem;
+    color: var(--bs-emphasis-color);
+}
+
+.wrapper{
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+#sidebar{
+    max-width: 264px;
+    min-width: 264px;
+    background: var(--bs-dark);
+    transition: all 0.35s ease-in-out;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+    background: var(--bs-dark-bg-subtle);
+}
+.sidebar-logo{
+    padding: 1.15rem;
+}
+.sidebar-logo a{
+    color: #e9ecef;
+    font-size: 1.85rem;
+    font-weight: 600;
+}
+.sidebar-nav{
+    flex-grow: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-nav li{
+    font-size: 20px;
+}
+.sidebar-header{
+    color: #e9ecef;
+    font-size: 0.75rem;
+    padding: 1.5rem 1.5rem 0.375rem;
+}
+a.sidebar-link{
+    padding: .725rem 1.625rem ;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+.sidebar-link[data-bs-toggle="collapse"]::after{
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position:absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+.sidebar-link[data-bs-toggle="collapse"].collapse::after{
+    transform: rotate(45deg);
+    transition: all 2s ease-out;
+}
+.avatar{
+    height: 40px;
+    width: 40px;
+}
+.navbar-expand .navbar-nav{
+    margin-left: auto;
+}
+.content{
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+}
+@media (min-width:768px){
+    .content{
+        max-width: auto;
+        width: auto;
+    }
+}
+.card{
+    box-shadow: 0 0 0.875rem 0 rgba(34, 46, 60 , .05);
+    margin-bottom: 24px;
+}
+.card-select{
+    margin-left: auto;
+}
+.desc_product{
+    width: 30%;
+    background-color: red;
+}
+.illustration{
+    background-color: rgb(197, 218, 243);
+    color: var(--bs-emphasis-color);
+}
+.illustration-img{
+    max-width: 150px;
+    width: 100%;
+}
+
+#sidebar.collapsed{
+    margin-left: -264px;
+}
+
+@media(max-width: 768px){
+    .navbar, .footer{
+        width:100vw;
+        
+    }
+}
+.notification {
+    position: relative;
+    font-size: 28px;
+    color: #5d6f83;
+}
+  
+.notification .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 16px;
+    padding: 4px 2px 5px;
+    border-radius: 4px;
+    color: rgb(215, 10, 10);
+}
+  
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sidebar-dropdown .sidebar-link{
+    font-size: 12px;
+    padding: 5px 36px;
+}
+.active{
+    background-color: red;
+}
+.add_emp{
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    border: 1px solid #434040;
+    margin: 20px;
+}
+.add_emp:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.add_form{
+    margin: 20px;
+    padding: 50px;
+    background-color: rgb(218, 218, 218);
+}
+.add_emp_title{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.field label{
+    width: 200px;
+    font-size: 1.2rem;
+}
+.field input{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.btn_submit input{
+    font-size: 15px;
+    padding: 5px;
+}
+input.Submit{
+    background-color: #fffbfb;
+    min-width: 120px;
+    padding: 5px;
+    font-size: 15px;
+}
+input.Submit:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.table td img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.table .delete:hover{
+    cursor: pointer;
+}
+.modalEmp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+}
+.modalEmp .confirm{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+.hidden{
+    display: none;
+}
+  
