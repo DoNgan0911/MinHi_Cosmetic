@@ -1,0 +1,109 @@
+.img_item{
+    height:150px;
+    width:150px;
+}
+.cons_myOrder{
+    margin: 50px;
+    padding:100px;
+    padding-bottom: 170px;
+    padding-top: 10px;
+    border: 1px solid #aeaeae;
+    width: 80%;
+    height: auto;
+
+}
+
+.cons_date_order{
+    display: flex;
+    font-family: 'Arial';
+    font-size: 20px;
+    color: #3c5e7c;
+    padding-left: 50px;
+}
+.cons_item{
+    display: flex;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 30px;
+    border-bottom: 1px solid #aeaeae;
+}
+.namesp{
+    font-size: 30px;
+    color: #333;
+}
+.order_img{
+    width:120px;
+    height: 120px;
+}
+.cons_inf_order_detail {
+    padding: 10px;
+}
+
+.name_pr {
+    font-size: 20px; /* Thiết lập kích thước chữ */
+    color: #333; /* Thiết lập màu chữ */
+}
+
+.soluong {
+    margin-top: 10px;
+    font-style: italic; 
+    font-size: 20px;
+}
+.giaSp{
+    margin-top: 25px; 
+    font-weight: bold;     
+    font-size: 20px;    
+    margin-right: 9px;         
+}
+
+.total_a_pr{
+    margin-top: 25px; 
+    font-weight: bold; 
+    font-size: 25px;
+    margin-right: 9px;
+    color:#6194ac;
+}
+.total_bill{
+    float: left;
+    padding: 22px;
+}
+
+.total {
+    font-weight:4px;
+    margin-top: 30px;
+    font-size: 20px;
+    display: inline;
+}
+
+.cons_info_function{
+    float: right;
+}
+.cons_total_bill{
+    color: #f24f00;
+    padding-top: 10px;
+}
+.cons_function{
+    margin-top: 20px;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    font-size: 2rem;
+    font-family: 'Inter';
+    float: right;
+    color: #333;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9db0cc;
+    border-radius: 5px;
+    border: 2px solid #b8c0cc;
+    margin-left:20px;
+
+}
+.btn:hover{
+    background-color: #25305e;
+    color: #fff;
+}
